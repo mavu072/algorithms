@@ -1,3 +1,6 @@
+// selection_sort.rs
+// a program that uses selection sort to sort a given collection.
+
 use std::collections::HashMap;
 
 pub fn main() {

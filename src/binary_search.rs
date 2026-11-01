@@ -17,6 +17,7 @@ pub fn main() {
 }
 
 /// Checks if the guess is accurate.
+///
 /// Returns true if accurate and false if not.
 fn check_guess(list: &[i32], item: &i32, found_at: &usize) -> bool {
     let found = list[*found_at];
@@ -33,6 +34,7 @@ fn check_guess(list: &[i32], item: &i32, found_at: &usize) -> bool {
 /// A binary search function.
 /// Uses the binary search algorithm to find the specified number in the fewest steps,
 /// by beginning the search in the middle.
+///
 /// Returns the found element index.
 fn binary_search(list: &Vec<i32>, item: &i32) -> usize {
     println!("BINARY SEARCH: Item: {} | List: {:?}", item, list);
