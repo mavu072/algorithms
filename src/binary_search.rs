@@ -18,16 +18,16 @@ pub fn main() {
 
 /// Checks if the guess is accurate.
 /// Returns true if accurate and false if not.
-fn check_guess(list: &Vec<i32>, item: &i32, found_at: &usize) -> bool {
+fn check_guess(list: &[i32], item: &i32, found_at: &usize) -> bool {
     let found = list[*found_at];
     if found == *item {
         println!(
             "Item: {} was found! Guess: {} at index: {}",
-            &item, found, &found_at
+            item, found, found_at
         );
         return true;
     }
-    return false;
+    false
 }
 
 /// A binary search function.
