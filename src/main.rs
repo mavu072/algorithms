@@ -1,4 +1,5 @@
 mod binary_search;
+mod recursion;
 mod selection_sort;
 
 fn main() {
@@ -6,4 +7,5 @@ fn main() {
 
     binary_search::main();
     selection_sort::main();
+    recursion::main();
 }
