@@ -17,7 +17,7 @@ pub fn main() {
 fn factorial(num: i64) -> i64 {
     if num == 1 {
         // Base case
-        return num;
+        num
     } else {
         // Recursive case
         num * factorial(num - 1)
